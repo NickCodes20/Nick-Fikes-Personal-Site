@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
 
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
 
@@ -15,8 +23,20 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
+  <!-- Comment color key -->
+  <!-- * New Section -->
+  <!-- ^ Features -->
+  <!-- TODO to do list/items -->
+  <!-- ? Description -->
+
+  <!-- TODO List -->
+  <!-- TODO add downloads section to give access to executable files -->
+  <!-- TODO add "OpenLocalHost" project to downloads section -->
+
   <body>
-    <!-- HEADER -->
+    <!-- * HEADER -->
+
     <header class="header">
       <nav class="nav">
         <label for="toggle" class="hamburger">&#9776;</label>
@@ -24,7 +44,7 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#aboutMe">About Me</a></li>
           <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#downloads">Downloads</a></li>
         </ul>
       </nav>
       <div class="wrapper">
@@ -40,7 +60,9 @@
       </div>
     </header>
     <div class="gradient-divider"></div>
-    <!-- ABOUT ME -->
+
+    <!-- * ABOUT ME -->
+
     <main>
       <article class="about-me" id="aboutMe">
         <div class="content-container">
@@ -70,18 +92,55 @@
         </div>
       </article>
       <div class="gradient-divider"></div>
-      <!-- PORTFOLIO -->
+
+      <!-- * PORTFOLIO -->
+
       <div class="portfolio" id="portfolio">
         <h2 class="header-text">Portfolio</h2>
         <div class="flex-container">
-          <div class="card-gradient">
-            <div class="portfolio-item card">
-              <h3 class="portfolio-title">Jyourz Website (Musician)</h3>
-              <img
-                src="images/Jyourz Website Screenshot.png"
-                alt="Jyourz's Website"
-                class="portfolio-img"
-              />
+          <!-- ^ Portfolio Item -->
+          <div class="card-container">
+            <h3 class="portfolio-title">Mario's Mobile Detailing</h3>
+            <a
+              href="https://www.mariosmobiledetailing.com/"
+              target="_blank"
+              class="card_portfolio-link"
+            >
+              <div class="card-gradient">
+                <div class="portfolio-item card">
+                  <img
+                    src="images/MMD Full.png"
+                    alt="Jyourz's Website"
+                    class="portfolio-img"
+                  />
+                </div>
+              </div>
+              <a
+                class="portfolio-links"
+                href="https://github.com/NickCodes20/MariosMobileDetailing"
+                target="_blank"
+                ><i class="fa-brands fa-github icon"></i> GitHub</a
+              >
+            </div>
+          </a>
+          <!-- ^ Portfolio Item End -->
+
+          <!-- ^ Portfolio Item -->
+          <div class="card-container">
+            <h3 class="portfolio-title">Jyourz Website (Musician)</h3>
+            <a
+              href="https://github.com/NickCodes20/Jyourz-Webpage"
+              class="card_portfolio-link"
+            >
+            <div class="card-gradient">
+                <div class="portfolio-item card">
+                  <img
+                    src="images/Jyourz Website Full.png"
+                    alt="Jyourz's Website"
+                    class="portfolio-img"
+                  />
+                </div>
+              </div>
               <a
                 class="portfolio-links"
                 href="https://github.com/NickCodes20/Jyourz-Webpage"
@@ -89,27 +148,31 @@
                 ><i class="fa-brands fa-github icon"></i> GitHub</a
               >
             </div>
-          </div>
-          <div class="card-gradient">
-            <div class="portfolio-item card">
-              <h3 class="portfolio-title">Vehicle Detailing Website</h3>
-              <img
-                src="images/BB&C Website Screenshot.png"
-                alt="Bay Boat's & Cars Website"
-                class="portfolio-img"
-              />
-              <a
-                class="portfolio-links"
-                href="https://github.com/NickCodes20/Avery_Ashley_Detailing_Website"
-                target="_blank"
-                ><i class="fa-brands fa-github icon"></i> GitHub</a
-              >
-            </div>
-          </div>
+          </a>
+          <!-- ^ Portfolio Item End -->
         </div>
       </div>
       <div class="gradient-divider"></div>
-      <!-- FOOTER -->
+
+      <!-- * Downloads Section -->
+
+      <!-- <div id="downloads">
+        <div class="flex-container">
+          <h2 class="header-text">Downloads</h2>
+          <a
+            href="Download Files/OpenLocalHost.zip"
+            download="OpenLocalHost.zip"
+            type="application/zip"
+            title="Download OpenLocalHost"
+            class="download-link"
+            >Download OpenLocalHost</a
+          >
+        </div>
+      </div>
+      <div class="gradient-divider"></div> -->
+
+      <!-- * FOOTER -->
+
       <footer class="footer">
         <div class="icon-wrapper">
           <a

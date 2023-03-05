@@ -1,0 +1,3 @@
+Portfolio item's are too big to fit inside portfolio
+boundaries, currently pushing out the right side.
+Try reducing size of cards to constrain cards within boundaries
