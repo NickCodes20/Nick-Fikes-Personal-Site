@@ -287,12 +287,13 @@ h3 {
   background: #ff0000;
 }
 
-.card-container a {
+.card-container {
   text-decoration: none;
   color: #d0d0d0;
   font-size: 1rem;
   transition: color 1s;
   padding: 2rem;
+  text-align: center;
 }
 
 .card a:hover,
@@ -307,6 +308,12 @@ h3 {
   /* height: 100%; */
   border-radius: 20px;
   object-position: top;
+}
+
+.card-container .portfolio-links {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
 }
 
 .portfolio-links:hover,
