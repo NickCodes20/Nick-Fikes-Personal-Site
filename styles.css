@@ -4,8 +4,8 @@
 
   /* Font Sizes */
   --full-size: 8rem;
-  --half-size: 6rem;
-  --m_header-animation: 4rem;
+  --three-quarter-size: 6rem;
+  --half-size__mobile-ready: 4rem;
   --quarter-size: 2.5rem;
 
   /* Container Sizes */
@@ -44,6 +44,10 @@ body {
 
 /* * Nav */
 
+.blog-nav {
+  display: contents;
+}
+
 .hamburger {
   margin: 0 0 0 40px;
   font-size: 2rem;
@@ -66,7 +70,7 @@ body {
   background-color: rgba(0, 0, 0, 20%);
   backdrop-filter: blur(10px);
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 20%);
+  /* box-shadow: 0 0 10px 10px rgba(0, 0, 0, 20%); */
   padding: 0;
 }
 
@@ -109,17 +113,27 @@ a:hover::before {
   text-align: center;
 }
 
+/* TODO fix blog header, should not be dead center of page. Slightly below nav bar */
+
+.blog-header {
+  display: inline-block;
+}
+
 .wrapper {
   box-sizing: content-box;
   height: var(--fs-head-container);
   overflow: hidden;
 }
 
-h1 {
+.animated {
   display: block;
   /* border: 1px solid orange; */
   font-size: var(--full-size);
   animation: spin_words 7.5s infinite;
+}
+
+h1 {
+  font-size: var(--full-size);
 }
 
 h2 {
@@ -372,11 +386,11 @@ footer .icon-wrapper {
 @media screen and (max-width: 1239px) {
   /* Header Query */
   h1 {
-    font-size: var(--half-size);
+    font-size: var(--three-quarter-size);
   }
 
   .wrapper {
-    height: calc(var(--half-size) + 1rem);
+    height: calc(var(--three-quarter-size) + 1rem);
   }
 
   /* About Me Query */
@@ -436,11 +450,11 @@ footer .icon-wrapper {
 
   /* Mobile Header Query */
   h1 {
-    font-size: var(--m_header-animation);
+    font-size: var(--half-size__mobile-ready);
   }
 
   .wrapper {
-    height: calc(var(--m_header-animation) + 1rem);
+    height: calc(var(--half-size__mobile-ready) + 1rem);
   }
 
   .about-me_img {

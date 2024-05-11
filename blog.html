@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nick's Blog</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="body">
-    <header id="top" class="header">
-      <nav>
-        <h1 class="header-text">Welcome to My Blog</h1>
-        <ul>
-          <li class="line-item line-item-hover">
-            <a href="index.html">HOME</a>
-          </li>
-          <li class="line-item line-item-hover">PORTFOLIO</li>
-          <li class="line-item line-item-hover">WHAT'S NEXT</li>
-          <li class="line-item line-item-hover">
-            <a href="blog.html">BLOG</a>
-          </li>
+    <!-- * HEADER -->
+
+    <header class="header" id="top">
+      <nav class="blog-nav">
+        <label for="toggle" class="hamburger">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#downloads">Downloads</a></li>
+          <li class="nav-item"><a href="#top">Blog</a></li>
         </ul>
       </nav>
-      <hr />
+      <h1 class="header-text">Blog</h1>
     </header>
+    <div class="gradient-divider"></div>
     <section>
-      <h2 class="header-text">BLOG</h2>
       <!--add image somewhere-->
       <!--also figure out how a blog is structured. Links with dates and title maybe?-->
+      <!-- * Topics -->
+      <a href="blog_topics/networking.html">Networking</a>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugit
         necessitatibus delectus minus nobis ipsam itaque, maxime sapiente
